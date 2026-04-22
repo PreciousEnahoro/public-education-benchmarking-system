@@ -16,7 +16,7 @@
 - **student_teacher_ratio_clean:** Students per teacher
 - **pct_black:** Share of students identified as Black
 - **pct_hispanic:** Share of students identified as Hispanic
-- **is_urban / urbanicity:** Urban context indicator
+- **is_urban / urban?:** Urban context indicator
 
 ## Dashboard fields
 - **Performance vs Expectation:** Categorized benchmark status based on institutional gap
