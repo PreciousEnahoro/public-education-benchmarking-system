@@ -90,10 +90,10 @@ The Tableau dashboard is organized into three views:
 
 
 ## Files in this repo
-- sql/ contains data preparation and table-building logic
-- notebooks/ contains modeling and export workflows
-- outputs/ contains model outputs and dashboard-ready files
-- data_dictionary.md explains the final variables
+- ```sql/``` contains data preparation and table-building logic
+- ```notebooks/``` contains modeling and export workflows
+- ```outputs/``` contains model outputs and dashboard-ready files
+- ```data_dictionary.md``` explains the final variables
 
 
 ## Limitations
