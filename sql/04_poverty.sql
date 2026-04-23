@@ -49,4 +49,31 @@ SELECT * from saipe_2019_clean
 union all
 SELECT * from saipe_2022_clean
 union all
-SELECT * from saipe_2023_clean
+SELECT * from saipe_2023_clean;
+
+
+CREATE OR REPLACE TABLE poverty_lea_all_years AS
+SELECT
+  l.LEAID,
+  l.year,
+
+  AVG(
+    CAST(
+      NULLIF(REPLACE(s.poverty_rate_5_17, ',', ''), '.') 
+      AS DOUBLE
+    )
+  ) AS poverty_rate_5_17,
+
+  AVG(
+    CAST(
+      NULLIF(REPLACE(s.median_household_income, ',', ''), '.') 
+      AS DOUBLE
+    )
+  ) AS median_household_income
+
+FROM lea_urban_nonurban_all_years l
+LEFT JOIN saipe_clean s
+  ON l.county_fips = s.county_fips
+ AND l.year = s.year
+
+GROUP BY 1,2;
