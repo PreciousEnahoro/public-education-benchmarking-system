@@ -137,3 +137,16 @@ UNION ALL
 SELECT * FROM ccd_demo_2122
 UNION ALL
 SELECT * FROM ccd_demo_2223;
+
+CREATE TABLE demo_wide_all_years AS
+SELECT
+    LEAID,
+    year,
+    MAX(CASE WHEN RACE_ETHNICITY = 'Black or African American' THEN pct_race END) AS pct_black,
+    MAX(CASE WHEN RACE_ETHNICITY = 'Hispanic/Latino' THEN pct_race END) AS pct_hispanic,
+    MAX(CASE WHEN RACE_ETHNICITY = 'White' THEN pct_race END) AS pct_white,
+    MAX(CASE WHEN RACE_ETHNICITY = 'Asian' THEN pct_race END) AS pct_asian,
+    MAX(CASE WHEN RACE_ETHNICITY = 'American Indian or Alaska Native' or RACE_ETHNICITY = 'Native Hawaiian or Other Pacific Islander' or RACE_ETHNICITY = 'Not Specified' or RACE_ETHNICITY = 'Two or more races' THEN pct_race END) AS pct_other_race,
+    MAX(total_enrollment) AS total_enrollment
+FROM ccd_demo_all_years
+GROUP BY LEAID, year;
