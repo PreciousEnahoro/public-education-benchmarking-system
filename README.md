@@ -43,6 +43,7 @@ This project integrates multiple public datasets:
   https://eddataexpress.ed.gov/download/data-library
 
 - **SAIPE (Small Area Income and Poverty Estimates)** – Child poverty rates  
+  https://www.census.gov/data/datasets/2023/demo/saipe/2023-state-and-county.html
   https://www.census.gov/programs-surveys/saipe.html  
 
 - **NCES EDGE / Geographic Crosswalks** – LEA-to-county mappings  
