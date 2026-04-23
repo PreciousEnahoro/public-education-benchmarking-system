@@ -39,8 +39,8 @@ This project integrates multiple public datasets:
 - **NCES CCD Staffing Files** – Teacher counts and staffing data  
   https://nces.ed.gov/ccd/pubstaff.asp  
 
-- **EDFacts Chronic Absenteeism Data** – District-level absenteeism rates  
-  https://www2.ed.gov/about/inits/ed/edfacts/data-files/index.html  
+- **EdDataExpress Chronic Absenteeism Data** – District-level absenteeism rates  
+  https://eddataexpress.ed.gov/download/data-library
 
 - **SAIPE (Small Area Income and Poverty Estimates)** – Child poverty rates  
   https://www.census.gov/programs-surveys/saipe.html  
