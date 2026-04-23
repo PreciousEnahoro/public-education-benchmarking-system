@@ -29,15 +29,25 @@ This system is designed as a reusable benchmarking framework, not just a descrip
 3. Districts with similar structural conditions still exhibit substantial variation in outcomes. This suggests that performance differences cannot be explained by context alone and that institutional factors play an important role.
    
 
-## Data sources
+## Data Sources
+All data sources are publicly available and used in accordance with their respective usage policies.
+This project integrates multiple public datasets:
 
-This project integrates multiple public data sources, including:
+- **NCES Common Core of Data (CCD)** – District-level enrollment and demographics  
+  https://nces.ed.gov/ccd/files.asp  
 
-- NCES CCD membership and demographics files
-- NCES staffing files
-- EDFacts chronic absenteeism data
-- SAIPE child poverty estimates
-- NCES/EDGE geographic crosswalks
+- **NCES CCD Staffing Files** – Teacher counts and staffing data  
+  https://nces.ed.gov/ccd/pubstaff.asp  
+
+- **EDFacts Chronic Absenteeism Data** – District-level absenteeism rates  
+  https://www2.ed.gov/about/inits/ed/edfacts/data-files/index.html  
+
+- **SAIPE (Small Area Income and Poverty Estimates)** – Child poverty rates  
+  https://www.census.gov/programs-surveys/saipe.html  
+
+- **NCES EDGE / Geographic Crosswalks** – LEA-to-county mappings  
+  https://nces.ed.gov/programs/edge/Geographic/SchoolLocations  
+
 
   
 ## Method Overview
