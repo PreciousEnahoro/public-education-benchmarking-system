@@ -2,15 +2,6 @@ CREATE TABLE grad1819 AS
 SELECT *
 FROM read_csv_auto('C:\Users\enaho\Downloads\Absenteeism\graduation1819.csv');
 
-
-select * from grad1819
-
-PRAGMA table_info(grad1819);
-SELECT DISTINCT TOTAL_INDICATOR FROM grad1819;
-
-SELECT DISTINCT "Value"
-FROM grad1819
-
 CREATE TABLE graduation1819 AS
 SELECT
     "NCES LEA ID" AS LEAID,
@@ -51,16 +42,6 @@ WHERE
     AND Subgroup = 'All Students'
     AND "Data Description" = 'Four-Year Adjusted-Cohort Graduation Rates';
 
-
-select * from graduation1819
-
-SELECT
-  COUNT(*) AS districts,
-  AVG(grad_rate_2019) AS avg_grad,
-  MIN(grad_rate_2019),
-  MAX(grad_rate_2019),
-  SUM(grad_imputed_flag) AS num_imputed
-FROM graduation1819;
 
 
 drop table poverty_lea_all_years
