@@ -113,9 +113,9 @@ The Tableau dashboard is organized into three views:
 3. Benchmarking results depend on the available structural variables and should not be interpreted as causal proof of institutional effectiveness.
 
 ## Contact and Collaboration
-Author: Precious Enahoro
-GitHub: @PreciousEnahoro
-Linkedin: (https://www.linkedin.com/in/precious-enahoro/)
+- **Author**: Precious Enahoro
+- **GitHub**: @PreciousEnahoro
+- **Linkedin**: (https://www.linkedin.com/in/precious-enahoro/)
 
 ## Future extensions
 1. Add additional years
